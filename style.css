@@ -1,8 +1,63 @@
-body html{
-    width: 100%;
-    height: 100%;
+.section{
+    display: flex;
+    /* height: 40%; */
+    margin: 1%;
+    align-items: center;
 }
 
+.main-section{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-section > p{
+    font-size: 27px;
+    width: 95%;
+    
+}
+.image-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    width: 50%;
+}
+.image-1 > img{
+    margin-top: 2%;
+    width: 75%;
+}
+.header{
+    margin: 0;
+    line-height:35px;
+}
+
+.head-1{
+    font-family: 'Passions Conflict', cursive;
+    font-size: 80px;
+    font-weight: 100;
+    color: rgb(220, 187, 0);
+}
+.head-2{
+    font-family: 'Acme', sans-serif;
+    letter-spacing: 10px;
+    font-size: 40px;
+}
+.article{
+    text-align: center;
+  
+}
+.album-bottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+.album-bottom > img{
+    width: 24%;
+}
 .footer-container{
     height: 100%;
     background-color: black;
@@ -47,3 +102,81 @@ a{
     text-decoration: none; 
     color:lightgray ;
 }
+
+
+/* media - responsiv */
+
+/* for max-width=900 */
+@media (max-width: 900px) {
+  
+    .section{
+        display: flex;
+        flex-direction:column;
+    }
+
+    .main-section{
+        width: 98%;
+        height: 100%;
+        text-align: center;
+        padding: 1%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+
+        .main-section > p{
+            font-size: 20px;
+            line-height: normal;
+        }
+
+        .head-1{
+            font-size: 40px;
+        }
+        .head-2{
+            font-size: 20px;
+            letter-spacing: 5px;
+        }
+        .header{
+            line-height:20px;
+        }
+        .image-1{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1%;
+            width: 100%;
+        }
+
+        .image-1 > img{
+            width: 48%;
+        }
+  }
+  @media only screen and (max-width: 600px) {
+    
+    .footer-container{ 
+        max-width: 600px;
+   
+     
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .media-section{
+        max-height: 400px;
+        max-width:600px ;
+        padding-bottom: 100px;
+    }
+    svg{
+        padding-top: 25px;
+    }
+    .contact-section{
+        max-height:350px ;
+        max-width:  600px;;
+        padding-bottom: 50px;
+       
+    }
+
+
+  }
